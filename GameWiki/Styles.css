@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; /* Make the nav sticky */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 10px; /* Space between logo and site name */
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-container {
+    display: flex;
+    flex: 1; /* Allow the main container to grow and fill the available space */
+    padding: 20px;
+}
+
+.left-sidebar {
+    width: 20%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.suggestions {
+    list-style: none;
+    padding: 0;
+}
+
+.suggestions li {
+    margin: 10px 0;
+}
+
+.suggestions a {
+    text-decoration: none;
+    color: #00FFFF; 
+    font-family:Cursive;
+}
+
+.suggestions a:hover {
+    text-decoration: underline;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.game-item {
+    text-align: center;
+}
+
+.game-item img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 5px;
+}
+
+.right-container {
+    width: 20%;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #ffffff;
+    position: absloute; /* Fix the footer at the bottom */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width */
+}
+.container {
+    margin-bottom: 20px; /* Add spacing between containers */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #39ff14; /* Button color */
+    color: #1c1c1c;;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #00bfff;; /* Darker shade on hover */
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between items */
+}
+h2 {
+    font-family: 'Sans-serif', cursive; /* Use pixelated font for headings */
+    color: #39ff14; /* Neon green for headings */
+}
+a {
+    color: #00bfff; /* Electric blue for links */
+    text-decoration: none; /* Remove underline */
+ transition: color 0.3s; /* Smooth color transition */
+}
+a:hover {
+    color: #39ff14; /* Change color on hover */
+}
+.game-item {
+    text-align: center; /* Center align text */
+}
